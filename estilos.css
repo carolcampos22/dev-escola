@@ -1,0 +1,946 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.logo{
+    width: 18vw;
+    height: 8vh;
+    top: 4vh;
+    left: 13vw;
+    margin-left: 10.5vw;
+    margin-right: 16vw;
+    
+
+}
+
+header{
+    width: 100vw;
+    height: 16.5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+a{
+    margin-left:  1vw;
+    font-weight: 700;
+    size: 1.25vw;
+    line-height: 2vw;
+    color: #0E0E0E;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+.section-1{
+    height: 85vh;
+    width: 100vw;
+    left: 100vw;
+    top: 16.5;
+    background-color: #F3C558;
+
+}
+
+.img-zap{
+    width: 4vw;
+    height: 9vh;
+    right: 5.5vw;
+    top: 85vh;
+    position: fixed;
+    margin: 0;
+    
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    left: 30vw;
+    margin-top: 16vh;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    height: 6vh;
+    margin-left: 4vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 51px;
+    color: #0E0E0E;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    height: 79px;
+    left: 735px;
+    margin-top: 10vh;
+    background: #0E0E0E;
+    border-radius: 9px;
+    padding-right: 10px;
+}
+
+
+.conheca{
+    width: 292px;
+    height: 36px;
+    left: 816px;
+    top: 651px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 70px;
+    color: #FBFBFB;
+}
+
+.back{
+    position: absolute;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.section-2{
+    background-color: #0E0E0E;
+    width: 1920px;
+    height: 1161px;
+    left: 0px;
+    top: 929px;
+}
+
+.sobre-titulo{
+    width: 206px;
+    height: 60px;
+    left: 857px;
+    top: 1008px;
+    margin-left: 800px;
+    padding: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FBFBFB;
+}
+
+.sobre-texto{
+    position: absolute;
+    width: 1095px;
+    height: 144px;
+    left: 412px;
+    top: 1112px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+
+
+    color: #FBFBFB;
+}
+
+.depoimentos-titulo{
+    width: 277px;
+    height: 60px;
+    left: 822px;
+    top: 1431px;
+    margin-top: 300px;
+    margin-left: 800px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+
+
+    color: #FBFBFB;
+}
+
+.depoimentos-texto{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.depoimento{
+    background-color: lightblue;
+    width: 330px;
+    height: 372px;
+    left: 255px;
+    top: 1535px;
+    background-color: #FBFBFB;
+    border-radius: 10px;
+
+}
+
+
+.texto{
+    width: 265.83px;
+    height: 144px;
+    left: 287.08px;
+    top: 1737px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 10px;
+
+    color: #0E0E0E;
+}
+
+/*footer*/
+
+.imagem{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F3C558;
+    width: 1920px;
+    height: 500px;
+    margin-right: 0px;
+}
+
+.logo-footer{
+    margin-bottom: 50px;
+}
+
+.endereco-titulo{
+    width: 116px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0E0E0E;
+}
+
+.endereco{
+    width: 333px;
+    height: 24px;
+    left: 0px;
+    top: 344px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    color: #0E0E0E;
+}
+
+.link{
+    width: 63px;
+    height: 36px;
+    left: 600px;
+    top: 0px;
+    margin-left: 1vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+
+    color: #0E0E0E;
+}
+
+span{
+    width: 46px;
+    height: 24px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    color: #0E0E0E;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.redes-titulo{
+    width: 168px;
+    height: 36px;
+    left: 919px;
+    top: 0px;
+    margin-left: 1vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+
+    color: #0E0E0E;
+}
+
+.redes-lista{
+    display: flex;
+    justify-content: space-between;
+}
+
+.area-restrita-titulo{
+    width: 156px;
+    height: 36px;
+    left: 1254px;
+    top: 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+
+    color: #0E0E0E;
+}
+
+.area-restrita-lista:nth-child(1){
+    width: 146px;
+    height: 24px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    color: #0E0E0E;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.area-restrita-lista:nth-child(2){
+    width: 146px;
+    height: 24px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    color: #0E0E0E;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.maps{
+    box-sizing: border-box;
+    width: 449px;
+    height: 269px;
+    left: 0px;
+    top: 63px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/*página de cursos*/
+
+
+.img-zap-cursos{
+    margin-left: 94vw;
+    margin-top: -9vh ;
+}
+
+.container-cursos-descricao{
+    background-color: #F3C558;
+    width: 1920px;
+}
+
+.cursos-descricao{
+    background-color: #F3C558;
+    display: flex;
+    justify-content: space-around;
+    height: 457px;
+}
+
+.curso{
+    width: 387px;
+    height: 369px;
+    left: 0px;
+    top: 0px;
+    margin-top: 100px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    
+}
+
+.descricao-do-curso{
+    width: 312px;
+    height: 176px;
+    left: 38px;
+    top: 155px;
+    margin: 40px;
+    margin-top: 70px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+h1{
+    width: 196px;
+    height: 51px;
+    left: 96px;
+    top: 42px;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 51px;
+    margin-bottom: 70px;
+    color: #000000;
+}
+    
+
+
+.botao-2{
+    background-color: #F3C558;
+    height: 320px;
+    margin-left: 730px;
+}
+
+.texto-botao-2{
+    width: 225px;
+    height: 36px;
+    left: 849px;
+    top: 772px;
+    margin-left: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FBFBFB;
+}
+
+.container-descricao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 930px;
+    height: 246px;
+    left: 492px;
+    top: 1112px;
+    margin: 20px;
+    margin-top: 10px;
+    background: #FBFBFB;
+    border-radius: 12px;
+    
+}
+
+.descricao-dos-modulos{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background-color: black;
+    width: 1920px;
+    height: 980px;
+    padding-top: 120px;
+    
+    
+}
+
+.modulo-1, .modulo-2 > p{
+    width: 202px;
+    height: 22px;
+    left: 856px;
+    top: 1261px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.modulo-1{
+    margin-bottom: 84px;
+    margin-right: -50px;
+}
+
+/*página de contato*/
+
+.img-zap-contato{
+    position: absolute;
+    margin-left: 92vw;
+    margin-top: 63vh;
+    
+}
+
+.section-contato{
+    width: 1920px;
+    height: 750px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    
+    width: 486.16px;
+    height: 570px;
+    left: 717px;
+    top: 244px;
+    background: #F0F0F0;
+    border-radius: 8.45488px;
+    
+}
+
+.formulario-texto{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.formulario > h2{
+    width: 165px;
+    height: 36px;
+    left: 781.12px;
+    top: 292.62px;
+    margin-left: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.9555px;
+    line-height: 36px;
+    color: #000000;
+    
+
+    }
+
+.formulario-texto > button{
+    width: 357.92px;
+    height: 55.66px;
+    left: 781.82px;
+    top: 710.43px;
+    background: #F6C34A;
+    border-radius: 6.34116px;
+    border: none;
+    margin-top: 10px;
+
+}
+
+.formulario-texto > input{
+    width: 350px;
+    height: 35px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.enviar{
+    font-weight: bold;
+}
+
+
+
+main > nav{
+    width: 388px;
+    height: 778px;
+    margin-left: 0px;
+    top: 153px;
+    background: black;
+    
+}
+
+/*main > section{
+    width: 1532px;
+    height: 778px;
+
+    background-color: pink;
+}*/
+    
+
+
+.area-adm{
+    display: flex;
+    
+}
+
+
+.menu-lateral{
+    color: white;
+    font-weight: bold;
+    opacity: 50%;
+    display: flex;
+    width: 185px;
+    height: 172px;
+    left: 147px;
+    top: 212px;
+    margin-bottom: 500px;
+    margin-left: 150px;   
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menu-lateral a{
+    color: white;
+}
+
+
+.menu-lateral > div:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.menu-lateral > div:active{
+    color: #F3C558;
+    
+}
+
+.area-adm{
+    background-color: #F3C558;
+    border-bottom: 1px solid black;
+}
+
+.grid-de-turmas{
+    display: inline-block;
+    
+    
+}
+
+#cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+
+.botao-buscar-turma{
+    width: 120px;
+    height: 43px;
+    left: 1254px;
+    top: 213px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    background: #0E0E0E;
+    border-radius: 0px 4px 4px 0px;
+    margin-left: 44vw;
+    margin-top: 60px;
+    
+
+}
+
+#input-buscar-turma{
+    position: absolute;
+    width: 450px;
+    height: 43px;
+    left: 924px;
+    top: 213px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: -15vh;
+   
+    
+    
+}
+
+
+
+.turmas-descricao-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: 240px 240px;
+    gap: 50px;
+    margin-top: 100px;
+    margin-left: 200px;
+    /*margin-bottom: 100px;*/
+}
+
+.turma-relatorio{
+    width: 240px;
+    height: 223px;
+    left: 0px;
+    top: 0px;
+    padding: 12px;
+    background: #FFFFFF;
+    border-radius: 1vh;
+    margin-top: 2vh;
+}
+
+.titulo-turma{
+    text-align: center;
+    font-weight: bold;
+}
+
+.botao-matricular-aluno{
+    width: 330px;
+    height: 49.59px;
+    left: 615px;
+    top: 581px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FBFBFB;
+    background: #0E0E0E;
+    border-radius: 9px;
+    
+}
+
+.form-matricular-aluno{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.form-matricular-aluno, input{
+    width: 330px;
+    height: 36px;
+    left: 615px;
+    top: 502px;
+    border: none;
+    background: #FBFBFB;
+    border-radius: 4px;
+}
+
+.titulo-matriculas{
+    width: 134px;
+    height: 36px;
+    left: 615px;
+    top: 212px;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: -80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.administration{
+    display: flex;
+}
+
+#financeiro{
+    width: 50rem;
+    height: 50rem;
+    background-color: #F3C558;
+    
+}
+
+#mensagens{
+    margin-top: 5vh;
+    margin-left: 1vw;
+}
+
+.financeiro-curso{
+    margin-left: 20vh;
+    margin-top: 5vh;
+    
+}
+
+.financeiro-curso p{
+    width: 131px;
+    height: 36px;
+    left: 615px;
+    top: 212px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.financeiro-form{
+    margin-top: 3vh;
+    margin-left: 1vh;
+}
+
+.add-outro-curso{
+    width: 151px;
+    height: 21px;
+    left: 620px;
+    top: 339px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #000000;
+}
+
+.rel-aluno{
+    width: 50rem;
+    height: 50rem;
+    background-color: #F3C558;
+}
+
+.padrao{
+    width: 330px;
+    height: 49.59px;
+    left: 615px;
+    top: 581px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FBFBFB;
+    background: #0E0E0E;
+    border-radius: 9px;
+    margin-top: 3vh;
+    
+}
+
+.rel-aluno{
+    margin-top: 4vh;
+}
+
+.rel-aluno form{
+    margin-top: 4vh;
+}
+
+.rel-aluno p{
+    width: 189px;
+    height: 36px;
+    left: 1215px;
+    top: 212px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+#relatorio-aluno-filtrado{
+   margin-top: 3vh;
+   width: 8vw;
+}
+
+#matrícula-de-novo-estudante{
+    
+}
+
+#matriculado{
+    
+    width: 20vw;
+    height: 20vw;
+    margin-left: 50vw;
+    margin-top: -5vh;
+    font-size: 150%;
+}
+

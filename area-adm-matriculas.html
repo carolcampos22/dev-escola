@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área ADM</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img class="logo" src="./imagens/logo 1.png" alt="LabEscola logo" >
+        </a>
+        <nav>
+            
+            <a href="index.html">Home</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="contato.html">Contato</a>
+            <a href="area-adm-turmas.html">Area ADM</a> 
+            
+        </nav>
+    </header>
+        
+    <main class="area-adm">
+    
+        <nav class="menu">
+        
+            <div class="menu-lateral">
+                <a href="area-adm-turmas.html"> <div>Turmas</div></a> <br>
+                <a href="area-adm-matriculas.html"> <div>Matrículas</div></a> <br>
+                <a href="area-adm-financeiro.html"> <div>Financeiro Alunos</div></a>
+            
+            </div>
+        </nav>  
+    <section id="matrícula-de-novo-estudante">
+
+        <h2 class="titulo-matriculas">Matrículas</h2>
+        <form class="form-matricular-aluno" action="#">
+            
+            <label for="nome-novo-estudante">Nome </label> <br> 
+            <input type="text" name="nome" id="nome-novo-estudante"> <br> <br>
+            <label for="curso-novo-estudante">Curso </label> <br> 
+            <input type="text" name="curso" id="curso-novo-estudante"> <br> <br>
+            <label for="turma-novo-estudante">Turma </label> <br>
+            <input type="text" name="turma" id="turma-novo-estudante"> <br> <br>
+            <label for="num-de-parcelas-novo-estudante">Número de parcelas: </label> <br>
+            <input type="text" name="num-de-parcelas-novo-estudante" id="num-de-parcelas"> <br>
+            <button class="botao-matricular-aluno"  type="button" onclick="matricularNovoEstudante()">Matricular aluno</button>
+            
+        </form>
+        <div id="matriculado"></div> 
+        
+    </section>   
+        
+    </main>
+    <footer>
+        <div class="footer-1">
+            <div class="logo-footer">
+                <img src="./imagens/Lab.png" alt="">
+            <img src="./imagens/Esc.png" alt="">
+            <img src="./imagens/Vector-lab.png" alt="">
+            <img src="./imagens/la.png" alt="">
+            </div>
+            <br>
+            <span class="endereco-titulo">Endereço</span>
+            <br>
+            <a href="https://goo.gl/maps/6GEGqrDxqmuZWiXf6" target="_blank">
+                <img class="maps" src="./imagens/Rectangle 4.png" alt="">
+            </a>
+            <br>
+            <span class="endereco">
+                R. Pais Leme, 215. CEP 05424-150 - Pinheiros
+            </span>
+        </div>
+
+        <div class="footer-2">
+            <div class="link">Links</div>
+            <div class="lista-de-links">
+                <div>
+                    <a href="#"><span>Home</span></a>
+                    <br>
+                    <a href="#"><span>Cursos</span></a>
+                    <br>
+                    <a href="#"><span>Blog</span></a>
+                    <br>
+                    <a href="#"><span>Fale conosco</span></a>
+                    <br>
+                    <a href="#"><span>Termos e condições</span></a>
+                    <br>
+                    <a href="#"><span>Política de privacidade</span></a>
+                    <br>
+                    <a href="#"><span>FAQ</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-3">
+            <div class="redes-titulo">Redes sociais</div>
+            <div class="redes-lista">
+                <img src="./imagens/Vector (2).png" alt="">
+                <img src="./imagens/Vector (3).png" alt="">
+                <img src="./imagens/Vector (4).png" alt="">
+                <img src="./imagens/Vector (5).png" alt="">
+            </div>
+        </div>
+        <div class="footer-4">
+            <div class="area-restrita-titulo">Área restrita</div>
+            <br>
+            <div class="area-restrita-lista">
+                <a href="#"><p>Área administrativa</p></a>
+                <a href="#"><p>Espaço do aluno</p></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
