@@ -22,7 +22,7 @@ const cursos = [
 
 const turmas = [
     {
-        turma: "Hipátia",
+        turma: "T1",
         curso: "JavaScript",
         inicio: "30/11/2022",
         termino: "30/01/2023",
@@ -31,7 +31,7 @@ const turmas = [
         concluida: false
     },
     {
-        turma: "Sibyla",
+        turma: "T2",
         curso: "JavaScript",
         inicio: "30/10/2022",
         termino: "30/12/2022",
@@ -40,7 +40,7 @@ const turmas = [
         concluida: false
     },
     {
-        turma: "Curie",
+        turma: "T3",
         curso: "HTML e CSS",
         inicio: "15/09/2022",
         termino: "15/10/2022",
@@ -49,7 +49,7 @@ const turmas = [
         concluida: true
     },
     {
-        turma: "Zhenyi",
+        turma: "T4",
         curso: "HTML e CSS",
         inicio: "01/11/2022",
         termino: "01/01/2023",
@@ -58,7 +58,7 @@ const turmas = [
         concluida: false
     },
     {
-        turma: "Clarke",
+        turma: "T5",
         curso: "HTML e CSS",
         inicio: "04/07/2022",
         termino: "04/09/2022",
@@ -67,7 +67,7 @@ const turmas = [
         concluida: true
     },
     {
-        turma: "Blackwell",
+        turma: "T6",
         curso: "APIsRest",
         inicio: "20/03/2022",
         termino: "20/06/2022",
@@ -76,7 +76,7 @@ const turmas = [
         concluida: true
     },
     {
-        turma: "Elion",
+        turma: "T7",
         curso: "APIsRest",
         inicio: "12/01/2022",
         termino: "12/06/2022",
@@ -85,7 +85,7 @@ const turmas = [
         concluida: true
     },
     {
-        turma: "Burnell",
+        turma: "T8",
         curso: "APIsRest",
         inicio: "18/10/2022",
         termino: "18/04/2023",
@@ -96,8 +96,8 @@ const turmas = [
 ]
 const estudantes = [
     {
-        estudante: "Chris Evans",
-        turma: "Hipátia",
+        estudante: "Peter Parker",
+        turma: "T1",
         curso: "JavaScript",
         valor: 900,
         nParcelas: 9,
@@ -105,17 +105,36 @@ const estudantes = [
         parcelas: 100
     },
     {
-        estudante: "Halle Berry",
-        turma: "Burnell",
-        curso: "APIsRest",
+        estudante: "Luke Cage",
+        turma: "T3",
+        curso: "APis REST",
         valor: 2000,
         nParcelas: 4,
         desconto: false,
         parcelas: 500
     },
     {
-        estudante: "Lashana Lynch",
-        turma: "Zhenyi",
+        estudante: "Sam Alexander",
+        turma: "T3",
+        curso: "APis REST",
+        valor: 500,
+        nParcelas: 1,
+        desconto: true,
+        parcelas: 400
+    },
+
+    {
+        estudante: "Ava Ayala",
+        turma: "T2",
+        curso: "HTML e CSS",
+        valor: 500,
+        nParcelas: 1,
+        desconto: true,
+        parcelas: 400
+    },
+    {
+        estudante: "Danny Rand",
+        turma: "T7",
         curso: "HTML e CSS",
         valor: 500,
         nParcelas: 1,
@@ -188,9 +207,9 @@ const parcelarCurso = () => {
 //desconto aplicado conforme o número de parcelas:
     if (parcela > 0 && parcela <= 2){
         valorTotal = valorTotal * 0.8 //aplicados 20% de desconto
-        mensagensCursos.innerHTML =  (`Valor total do curso: R$${valorTotal} - foi concedido um desconto de 20%;\nValor da parcela: R$${valorTotal/parcela};\nQuantidade de parcelas: ${parcela}`)
+        mensagensCursos.innerHTML =  (`<div class="simulador">Valor total do curso: R$${valorTotal} - foi concedido um desconto de 20%;\nValor da parcela: R$${valorTotal/parcela};\nQuantidade de parcelas: ${parcela}</div>`)
     } else {
-        mensagensCursos.innerHTML =  (`Valor total do curso: R$${valorTotal} \nValor da parcela: R$${valorTotal/parcela};\nQuantidade de parcelas: ${parcela}`)
+        mensagensCursos.innerHTML =  (`<div class="simulador">Valor total do curso: R$${valorTotal} \nValor da parcela: R$${valorTotal/parcela};\nQuantidade de parcelas: ${parcela}</div>`)
 
     }
     
@@ -204,13 +223,13 @@ const containerDeTurmas = document.getElementById("cards-container")
 const buscarTurma = (turmaCard) => {
     const turmasMapeadas = turmaCard.map((item)=>{
         return `<section class="turma-relatorio">
-        <p class="titulo-turma">${item.turma}</p>
+        <h2 class="titulo-turma">${item.turma}</h2>
         <p>Curso: ${item.curso}</p>
         <p>Início: ${item.inicio}</p>
         <p>Término: ${item.termino}</p>
         <p>Número de Alunos: ${item.numeroDeAlunos}</p>
         <p>Período: ${item.periodo}</p>
-        <p>Concluído: ${item.concluida}</p>
+        <p>Concluído: ${item.concluida === true ? 'Sim' : 'Não'}</p>
         </section>`
     })
     return turmasMapeadas
@@ -218,15 +237,17 @@ const buscarTurma = (turmaCard) => {
 
 
 
-const turmasFiltradas = ()=>{
+const turmasFiltradas = () => {
     const inputNomeDaTurma = document.getElementById("input-buscar-turma").value
-    const turmaEncontrada = turmas.filter((item)=>{
-        if (item.turma.toLowerCase().includes(inputNomeDaTurma)){
-            return item
-        }
-
+    const turmaEncontrada = turmas.filter((item) => {
+        return item.turma.toLowerCase().includes(inputNomeDaTurma.toLowerCase())
     })
-    return turmaEncontrada ? containerDeTurmas.innerHTML = buscarTurma(turmaEncontrada) : containerDeTurmas.innerHTML = buscarTurma(turmas)
+
+    if (turmaEncontrada.length > 0) {
+        containerDeTurmas.innerHTML = buscarTurma(turmaEncontrada);
+    } else {
+        containerDeTurmas.innerHTML = "Turma não encontrada!";
+    }
 }
 
 
@@ -245,7 +266,7 @@ const buscarEstudante = () => {
         
     })
    
-    return estudanteEncontrado.length > 0 ? relatorioDoEstudante.innerHTML = `Aluno: ${estudanteEncontrado[0].estudante} <br>Turma: ${estudanteEncontrado[0].turma}; <br>Curso: ${estudanteEncontrado[0].curso}; <br>Valor total: ${estudanteEncontrado[0].valor}; <br>Valor da parcela: R$${estudanteEncontrado[0].parcelas},00; <br>Número de parcelas: ${estudanteEncontrado[0].nParcelas}` : relatorioDoEstudante.innerHTML = "Estudante não encontrado!"
+    return estudanteEncontrado.length > 0 ? relatorioDoEstudante.innerHTML = `<div class="relatorio-aluno-matriculado">Aluno: ${estudanteEncontrado[0].estudante} <br>Turma: ${estudanteEncontrado[0].turma}; <br>Curso: ${estudanteEncontrado[0].curso}; <br>Valor total: ${estudanteEncontrado[0].valor}; <br>Valor da parcela: R$${estudanteEncontrado[0].parcelas},00; <br>Número de parcelas: ${estudanteEncontrado[0].nParcelas}</div>` : relatorioDoEstudante.innerHTML = "Estudante não encontrado!"
     
 }
 
