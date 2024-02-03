@@ -14,6 +14,9 @@ git clone https://github.com/carolcampos22/devschool.git
 ```
 2. Entre na pasta do reposiorio e abra o arquivo index.html no navegador.
 
+### Link do site
+https://devschool-chi.vercel.app/
+
 ### Layout
 1. Página inicial
 ![](./imagens/prints/home.png)
